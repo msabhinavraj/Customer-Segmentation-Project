@@ -1,19 +1,50 @@
-# Customer-Segmentation-Project
-Customer Segmentation Using K-Means Clustering
-This project analyzes banking customer data to segment clients into distinct groups using K-Means clustering in Python. The primary goal is to uncover meaningful customer segments based on age, account balance, and transaction behavior, empowering banks to tailor services and marketing strategies.
+# Customer Segmentation Using K-Means Clustering
 
-Contents
-Customer_Segmentation.ipynb: Main Jupyter notebook with data cleaning, normalization, feature selection, clustering, and visualization code.
+Analyze banking customer data to identify and visualize client segments, enabling targeted financial strategies.
 
-Normalized_bank_transactions.csv: Cleaned and normalized dataset prepared for clustering.
+---
 
-segment_plot.jpg: Output image showing the clusters and their business interpretation.
+##  Project Overview
 
-Approach
-Data Preparation: Raw banking data was cleaned and transformed. Dates of birth were parsed, ages calculated, and negative ages excluded. Numeric features were normalized for optimal clustering.
+This repository contains a complete workflow for segmenting bank customers using K-Means clustering in Python. By leveraging features such as age, normalized account balance, and transaction amounts, this analysis provides actionable insights for personalized banking services.
 
-Clustering: Key features (age, normalized account balance, transaction amount) were selected for K-Means clustering. The optimal number of clusters was chosen to distinguish meaningful customer groups.
+---
 
-Visualization: Results were visualized, with clusters labeled as business segments (e.g., Young mass-market, Affluent mid-life, Middle-class stable, and High-value VIP seniors).
+##  Contents
 
-Business Insight: Segmenting customers allows banks to personalize offerings and improve targeting for products, marketing, and risk management.
+- **Customer_Segmentation.ipynb**  
+  Main Jupyter notebook: covers data cleaning, normalization, clustering, and visualization.
+- **Normalized_bank_transactions.csv**  
+  Cleaned and normalized data for segmentation.
+- **segment_plot.jpg**  
+  Visualization of clusters labeled by business segment.
+
+---
+
+##  Approach
+
+1. **Data Preparation**  
+   - Parsed and cleaned dates of birth and calculated customer ages.
+   - Removed negative ages and normalized all numerical fields.
+
+2. **Clustering**  
+   - Selected essential features: age, account balance, and transaction amount.
+   - Applied K-Means to identify distinct customer groups.
+
+3. **Visualization**  
+   - Labeled clusters with business-friendly categories:
+     - Young mass-market/entry-level
+     - Affluent mid-life customers
+     - Middle-class stable customers
+     - High-value VIP seniors
+
+4. **Business Insights**  
+   - Enables banks to tailor products, marketing, and retention strategies to each segment.
+
+---
+
+##  Usage
+
+- Open the notebook in Jupyter or Colab.
+- Run the workflow step-by-step to reproduce the segmentation and plots.
+- Adapt the workflow for your own banking or customer datasets.
